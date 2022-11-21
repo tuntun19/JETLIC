@@ -1,0 +1,230 @@
+body{
+    height: cover;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    font-family: 'Zen Maru Gothic', sans-serif;
+  }
+  
+  .top {
+    position: relative;
+  }
+  
+  .top_text {
+    position: absolute;
+    /* -ms-transform: translate(-50%,-50%);
+      -webkit-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%); */
+    margin: 0;
+    padding: 0;
+    /*文字の装飾は省略*/
+    color: #e3eff6;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    letter-spacing: 0.05em
+  }
+  
+  .top_text_sub1 {
+    margin-top: 50px;
+    left: 80px;
+    font-size: 48px;
+  }
+  
+  .top_text_sub2 {
+    margin-top: 120px;
+    left: 80px;
+    font-size: 48px;
+  }
+  
+  .top_text_sub3 {
+    margin-top: 300px;
+  
+  }
+  
+  .top_text_sub3-1{
+    margin-top: 190px;
+  }
+  .top_3{
+    left: 80px;
+    font-size: 48px;
+  }
+  
+  .top_text_sub4 {
+    margin-top: 370px;
+  }
+  .top_text_sub4-1 {
+    margin-top: 260px;
+  }
+  .top_4{
+    left: 80px;
+    font-size: 48px;
+  }
+  .top_text_sub2-1{
+      margin-top: 180px;
+      left: 100px;
+      font-size: 40px;
+    }
+    .top_text_sub2-2{
+      margin-top: 220px;
+      left: 100px;
+      font-size: 40px;
+    }
+    .top_text_sub2-3{
+      margin-top: 260px;
+      left: 100px;
+      font-size: 40px;
+    }
+  .jetlic {
+    top: 550px;
+    left: 78%;
+    font-size: 96px;
+  }
+  
+  .back {
+    width: 100%;
+  }
+  
+  .about {
+    width: 100%;
+    height: 1000px;
+    background-color: #e3eff6;
+  }
+  
+  .top_img {
+    width: 10%;
+    left: 80%;
+    top: 400px;
+  }
+  
+  .top_one {
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("one.jpg");
+  }
+  
+  
+  
+  .jetlicone p{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-family: 'Kalam', cursive;
+    margin-left: 50px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .logo_one {
+    margin-top: 100px;
+    width: 30%;
+  }
+  
+  .space{
+    height: 100px;
+  }
+  
+  /* 文字上英語タイトル(仮バージョン) */
+  .heading {
+    position: relative;
+    /*英字テキストの配置基準*/
+    padding-top: 60px;
+    /*日本語テキストの上余白*/
+    padding-left: 50px;
+    /*日本語テキストの左余白*/
+    font-size: 32px;
+  }
+  
+  .heading span {
+    position: relative;
+    /*z-indexを効かせるために必要*/
+    z-index: 0;
+    /*日本語テキストを英字テキストの上に指定*/
+  }
+  
+  .heading::before {
+    /*英字テキストを擬似要素で表現*/
+    content: attr(data-en);
+    /*データ属性の読み込み*/
+    position: absolute;
+    transform: rotate(-5deg);
+    /*英字テキストを斜めに傾ける*/
+    top: 0;
+    left: 0;
+    color: #f1ca00;
+    font-size: 80px;
+    font-weight: 400;
+    font-family: 'Playball', cursive;
+  }
+  .img_one{
+    width: 30%;
+  }
+  .one_about{
+    background:#f1ca00;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 2500px;
+    width: 100%;
+  }
+  .about_img{
+    height: 300px;
+    margin-left: 400px;
+  }
+  .one_about_right{
+    margin-top: 100px;
+    font-size: 28px;
+    width: 50%;
+    float: right;
+    padding-top: 20px;
+    padding-right: 20px;
+    text-align: center;
+    margin-right: 100px;
+    height: 300px;
+    background-color: #fff;
+    opacity: 0.9;
+  }
+  .one_about_left{
+    margin-top: 100px;
+    font-size: 28px;
+    width: 50%;
+    float: left;
+    padding-top: 20px;
+    padding-right: 20px;
+    text-align: center;
+    margin-left: 100px;
+    height: 500px;
+    background-color: #fff;
+    opacity: 0.9;
+  }
+  .img_one_com{
+    width: 300px;
+  }
+  .one_about_right2{
+    height: 1000px;
+  }
+  .footer
+  {
+    width: 100%;
+    height: 60px;
+    background-color: #3c3300;
+    color:  #fff;
+  }
+  .footer ul{
+    list-style: none;
+  
+  }
+  .footer_title{
+    font-size: 22px;
+    float: left;
+    margin: 15px;
+  }
+  .footer_text{
+    float: right;
+    margin: 15px;
+  }
+  /* コード */  

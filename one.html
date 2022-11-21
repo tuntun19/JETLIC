@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <!-- ↓フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script type="text/javascript">
+        $(function () {
+            $(".jetlicone").hide();
+            $(".logo_one").fadeOut(2500);
+            $(".footer").hide();
+            setTimeout(function () {
+                $(".top_one").fadeIn(600);
+                $(".jetlicone").fadeIn(1000);
+                $(".footer").fadeIn(1000);
+
+            }, 2500);
+        });
+    </script>
+</head>
+
+<body>
+    <p class="center"><img src="logo_one.png" alt="" lass="logo_one"></p>
+    <div class="jetlicone">
+        <div class="top_one" alt="つくる、まなぶ、みつける　全てができる立方体">
+        </div>
+        <div class="main_one">
+            <div class="one_about">
+                <!-- <img src="logo_one.png" alt="" class="about_img"> -->
+                <div class="one_about_right">
+                    <h2 class="heading" data-en="About"><span>JETLIC ONEとは</span></h2>
+                    <p>JETLIC ONEはJETLICのメインプロジェクトです</p>
+                    <p>子どもたちにモノづくりの楽しさを伝えられるようなコンピューターを制作することを目標にしています</p>
+                    <p>ここではそんなプロジェクトの一部であるOS作りと本体づくりについて紹介します</p>
+                </div>
+
+                <div class="space"></div>
+                <div class="one_about_left">
+                    <h2 class="heading" data-en="OS"><span>JETLIC ONEのOS作りについて</span></h2>
+                    <p>JETLIC ONEでは作製するコンピューターに搭載するOSをLinuxをベースに自作しています</p>
+                    <p>現在はJETLICのプログラム班が中心となって進めています</p>
+                    <p>OSには子どもでも使いやすくするための機能を搭載予定です</p>
+                    <p><img src="os_one.png" alt="" class="img_one"></p>
+                    <p>↑現在作成中のOS</p>
+                </div>
+                <div class="space"></div>
+                <div class="one_about_right one_about_right2">
+                    <h2 class="heading" data-en="Computer"><span>JETLIC ONEのコンピューターについて</span></h2>
+                    <p>JETLIC ONEのコンピューターはモノづくりやパソコンの仕組みに興味を持ってもらえるようにカバーは全面が透明なアクリルでできています</p>
+                    <p>コンピューターとしては珍しい一辺が20cmほどの立方体のパソコンです</p>
+                    <p>メンバーで設計、加工などを行っています</p>
+                    <p>パーツの一部を3Dプリンターで作るなどして子どもでも購入しやすい価格帯のコンピューターにしたいと思っています</p>
+                    <p><img src="com_one.png" alt="" class="img_one_com"></p>
+                    <p>↑JETLIC ONEをCADで制作中の様子</p>
+                    <p>またSSDとメモリは必要なスペックに応じて知識がなくても簡単に取り替えることができるようになっています</p>
+                    <p>それによって長く大切に使っていただけるコンピューターです</p>
+                    <p><img src="com2_one.png" alt="" class="img_one_com"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li class="footer_title">JETLIC</li>
+            <li class="footer_text">CONTACT</li>
+            <li class="footer_text">MEMBER</li>
+            <li class="footer_text">JETLIC Games</li>
+            <li class="footer_text">JETLIC Terakoya</li>
+            <li class="footer_text">JETLIC ONE</li>
+            <li class="footer_text">ABOUT</li>
+        </ul>
+    </div>
+</body>
+
+</html>
