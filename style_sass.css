@@ -7,7 +7,44 @@ body {
   padding: 0;
   top: 0;
   left: 0;
-  font-family: "Zen Maru Gothic", sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+
+.space {
+  height: 100px;
+}
+
+.logo_one {
+  margin-top: 100px;
+  width: 30%;
+}
+
+.heading {
+  position: relative;
+  padding-top: 30px;
+  padding-left: 10px;
+  font-size: 32px;
+}
+.heading span {
+  position: relative;
+  z-index: 0;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.heading::before {
+  content: attr(data-en);
+  position: absolute;
+  transform: rotate(-5deg);
+  top: 10px;
+  left: -50px;
+  color: #f1ca00;
+  font-size: 80px;
+  font-weight: 400;
+  font-family: "Kaushan Script", cursive;
 }
 
 .top {
@@ -23,7 +60,7 @@ body {
   margin: 0;
   padding: 0;
   color: #e3eff6;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "Rajdhani", sans-serif;
   letter-spacing: 0.05em;
 }
 .top .top_text1 {
@@ -76,6 +113,139 @@ body {
 }
 .top .jetlic {
   top: 550px;
-  left: 78%;
+  left: 75%;
   font-size: 96px;
+}
+
+.main .top_one {
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("one.jpg");
+}
+.main p {
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+.main .one_about {
+  background: #f1ca00;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 2500px;
+  width: 100%;
+}
+.main .terakoya {
+  height: 1700px;
+}
+.main .main_game {
+  height: 1500px;
+}
+.main .one_card {
+  margin-top: 100px;
+  font-size: 28px;
+  width: 50%;
+  padding-top: 20px;
+  padding-right: 20px;
+  text-align: left;
+  margin-right: 100px;
+  background-color: #fff;
+  opacity: 0.9;
+}
+.main .one_about_right {
+  float: right;
+  height: 300px;
+}
+.main .one_about_left {
+  float: left;
+  height: 600px;
+  margin-left: 120px;
+}
+.main .one_about_right2 {
+  height: 1150px;
+}
+.main .about_about_right {
+  float: right;
+  height: 300px;
+}
+.main .about_about_left {
+  float: left;
+  height: 600px;
+  margin-left: 120px;
+}
+.main .about_about_right2 {
+  height: 300px;
+  float: right;
+}
+.main .terakoya_right {
+  float: right;
+  height: 400px;
+}
+.main .terakoya_left {
+  float: left;
+  height: 600px;
+  margin-left: 120px;
+}
+.main .terakoya_right2 {
+  height: 200px;
+  float: right;
+}
+.main .game_right {
+  float: right;
+  height: 350px;
+}
+.main .about_img {
+  width: 100%;
+  height: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main .terakoya_img {
+  margin-top: 50px;
+  margin-left: 100px;
+  height: 300px;
+}
+
+.footer {
+  width: 100%;
+  height: 60px;
+  background-color: #3c3300;
+  color: #fff;
+}
+.footer ul {
+  list-style: none;
+  color: #fff;
+}
+.footer ul li {
+  font-size: 18px;
+  margin: 15px;
+  color: #fff;
+  font-family: "Rajdhani", sans-serif;
+}
+.footer .footer_title {
+  float: left;
+}
+.footer .footer_text {
+  float: right;
+}
+
+.btn-flat-border {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #0d417d;
+  border: solid 2px #0d417d;
+  border-radius: 3px;
+  transition: 0.4s;
+  width: auto;
+  font-size: 14px;
+  margin: 10px;
+  margin-left: 100px;
+}
+.btn-flat-border:hover {
+  background: #0d417d;
+  color: #fff;
 }/*# sourceMappingURL=style_sass.css.map */

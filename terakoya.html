@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- ↓フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <link rel="stylesheet" href="style_sass.css">
+    <title>JETLIC Terakoya</title>
+    <script type="text/javascript">
+        $(function () {
+            $(".main").hide();
+            $(".logo_one").fadeOut(2500);
+            $(".footer").hide();
+            setTimeout(function () {
+                $(".top_one").fadeIn(600);
+                $(".main").fadeIn(1000);
+                $(".footer").fadeIn(1000);
+
+            }, 2500);
+        });
+    </script>
+</head>
+
+<body>
+    <p class="center"><img src="terakoya_logo.png" alt="" class="logo_one animate__shakeX"></p>
+    <div class="main">
+        <div class="top_one" alt="つくる、まなぶ、みつける　全てができる立方体">
+        </div>
+        <div class="main_one">
+            <div class="one_about terakoya">
+                <!-- <img src="logo_one.png" alt="" class="about_img"> -->
+                <div class="terakoya_right one_card">
+                    <p class="heading" data-en="About"><span>JETLIC Terakoyaとは</span></p>
+                    <p>JETLIC Terakoyaは子どもたちがプログラミングだけでなくコンピューターに関する知識を無料で学べる場です</p>
+                    <p>教師はいません　私たちJETLICメンバーが教えることもあれば、子どもたちから学ぶこともあります</p>
+                    <p>ものづくりに興味のある人はぜひ参加してください</p>
+                    <p>場所は神戸市青少年会館またはオンラインです</p>   
+                    <a href="one.html" class="btn-flat-border">神戸市青少年会館へのアクセスはこちら(外部サイト)</a>
+                </div>
+
+                <div class="space"></div>
+                <div class="terakoya_left one_card">
+                    <p class="heading" data-en="Held event"><span>過去開催イベント</span></p>
+                    <p>パソコンの中身を調べてまとめてみよう(21年夏・オンライン)</p>
+                    <p>micro:bitでゲームを作ろう(22年春・オンライン)</p>
+                    <p>Scratchでゲームを作ろう(22年夏・オンライン)</p>
+                    <img src="terakoya.png" alt="過去イベント開催時の画像" class="terakoya_img">
+                </div>
+                <div class="space"></div>
+                <div class="terakoya_right2 one_card">
+                    <p class="heading" data-en="advance notices"><span>今後の開催について</span></p>
+                    <p>次回は3月下旬ごろの開催を予定しております</p>
+                    <p>詳細をお待ちください</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <a href="index.html"><li class="footer_title">JETLIC</li></a>
+            <a href="#"><li class="footer_text">CONTACT</li></a>
+            <a href="#"><li class="footer_text">MEMBER</li></a>
+            <a href="games.html"><li class="footer_text">JETLIC Games</li></a>
+            <a href="terakoya.html"><li class="footer_text">JETLIC Terakoya</li></a>
+            <a href="one.html"><li class="footer_text">JETLIC ONE</li></a>
+            <a href="about.html"><li class="footer_text">ABOUT</li></a>
+        </ul>
+    </div>
+</body>
+
+</html>
