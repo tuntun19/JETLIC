@@ -63,6 +63,9 @@ body {
   font-family: "Rajdhani", sans-serif;
   letter-spacing: 0.05em;
 }
+.top .top_text:hover {
+  color: #b67a77;
+}
 .top .top_text1 {
   left: 80px;
   font-size: 48px;
@@ -139,7 +142,13 @@ body {
   width: 100%;
 }
 .main .terakoya {
-  height: 1700px;
+  height: 2300px;
+}
+.main .member {
+  height: 3800px;
+}
+.main .contact {
+  height: 2000px;
 }
 .main .main_game {
   height: 1500px;
@@ -186,16 +195,38 @@ body {
 }
 .main .terakoya_left {
   float: left;
-  height: 600px;
+  height: 1200px;
   margin-left: 120px;
 }
 .main .terakoya_right2 {
   height: 200px;
   float: right;
 }
+.main .member_right {
+  float: right;
+  height: 200px;
+}
+.main .member_left {
+  float: left;
+  height: 350px;
+  margin-left: 120px;
+}
+.main .member_right2 {
+  height: 350px;
+  float: right;
+}
 .main .game_right {
   float: right;
   height: 350px;
+}
+.main .contact_right {
+  float: right;
+  height: 400px;
+}
+.main .contact_left {
+  float: left;
+  height: 250px;
+  margin-left: 120px;
 }
 .main .about_img {
   width: 100%;
@@ -204,9 +235,20 @@ body {
   background-size: cover;
 }
 .main .terakoya_img {
+  width: 50%;
   margin-top: 50px;
   margin-left: 100px;
-  height: 300px;
+}
+.main .sns {
+  width: 60px;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+.main .twitter {
+  margin-left: 50px;
+}
+.main .instagram {
+  width: 55px;
 }
 
 .footer {
@@ -248,4 +290,59 @@ body {
 .btn-flat-border:hover {
   background: #0d417d;
   color: #fff;
+}
+
+.twitter-follow-button {
+  margin-left: 50px;
+}
+
+.accordion-area {
+  list-style: none;
+  width: 96%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.accordion-area li {
+  margin: 10px 0;
+}
+.accordion-area section {
+  border: 1px solid #ccc;
+}
+
+.title {
+  position: relative;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 3% 3% 3% 50px;
+  transition: all 0.5s ease;
+}
+.title::before, .title::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 2px;
+  background-color: #333;
+}
+.title::before {
+  top: 48%;
+  left: 15px;
+  transform: rorate(0deg);
+}
+.title::after {
+  top: 48%;
+  left: 15px;
+  transform: rorate(90deg);
+}
+.title .close::before {
+  transform: rorate(45deg);
+}
+.title .close::after {
+  transform: rorate(-45deg);
+}
+
+.box {
+  display: none;
+  margin: 0 3% 3% 3%;
+  padding: 3%;
 }/*# sourceMappingURL=style_sass.css.map */

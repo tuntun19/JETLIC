@@ -70,6 +70,8 @@ body
         color: $text_white
         font-family: $font_english
         letter-spacing: 0.05em
+        &:hover
+            color: #b67a77
         
     
     .top_text1
@@ -149,7 +151,13 @@ body
         width: 100%
     
     .terakoya
-        height: 1700px
+        height: 2300px
+
+    .member
+        height: 3800px
+
+    .contact
+        height: 2000px
 
     .main_game
         height: 1500px
@@ -196,16 +204,38 @@ body
     
     .terakoya_left
         float: left
-        height: 600px
+        height: 1200px
         margin-left: 120px
 
     .terakoya_right2
         height: 200px
         float: right
+
+    .member_right
+        float: right
+        height: 200px
+    
+    .member_left
+        float: left
+        height: 350px
+        margin-left: 120px
+
+    .member_right2
+        height: 350px
+        float: right
     
     .game_right
         float: right
         height: 350px
+    
+    .contact_right
+        float: right
+        height: 400px
+
+    .contact_left
+        float: left
+        height: 250px
+        margin-left: 120px
     
 
     .about_img
@@ -215,9 +245,20 @@ body
         background-size: cover
     
     .terakoya_img
+        width: 50%
         margin-top: 50px
         margin-left: 100px
-        height: 300px
+
+    .sns
+        width: 60px
+        margin-left: 30px
+        margin-top: 50px
+
+    .twitter
+        margin-left: 50px
+    
+    .instagram
+        width: 55px
 
 .footer
     width: 100%
@@ -257,4 +298,57 @@ body
         background: #0d417d
         color: #fff
         
+.twitter-follow-button
+    margin-left: 50px
+
+.accordion-area
+    list-style: none
+    width: 96%
+    max-width: 900px
+    margin: 0 auto
+
+    li
+        margin: 10px 0
+    
+    section 
+        border: 1px solid #ccc
+
+
+.title
+    position: relative
+    cursor: pointer
+    font-size: 1rem
+    font-weight: normal
+    padding: 3% 3% 3% 50px
+    transition: all .5s ease
+
+    &::before,
+    &::after
+        position: absolute
+        content: ''
+        width: 15px
+        height: 2px
+        background-color: #333
+
+    &::before
+        top: 48%
+        left: 15px
+        transform: rorate(0deg)
+
+    &::after
+        top: 48%
+        left: 15px
+        transform: rorate(90deg)
+
+    .close    
+        &::before
+          transform: rorate(45deg)
+
+        &::after
+          transform: rorate(-45deg)
+
+.box
+    display: none
+    margin: 0 3% 3% 3%
+    padding: 3%
         
