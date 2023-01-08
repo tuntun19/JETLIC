@@ -10,9 +10,11 @@ $pc_footer_font-size:18px
 $footer_back_color:#3c3300
 $footer_color:#fff
 
-$pc: 1024px // PC
-$tab: 680px // タブレット
+$pc: 1400px // PC
+$tab: 850px // タブレット
 $sp: 480px  // スマホ
+$monitor: 1900px //FHDモニター
+
 
 @mixin pc 
   @media (max-width: ($pc)) 
@@ -28,7 +30,10 @@ $sp: 480px  // スマホ
   @media (max-width: ($sp)) 
     @content
   
-
+@mixin monitor
+  @media (min-width: ($monitor)) 
+    @content
+  
 
 body
     height: cover
@@ -166,7 +171,15 @@ body
     .top_img
         width: 10%
         left: 80%
-        top: 400px
+        top: 400px  
+        @include monitor
+            top: 870px
+            width: 8%
+            left: 90%
+
+        @include tab
+            left: 80%
+            top: 880px
         @include sp
             top: 570px
             left: 5%
@@ -175,7 +188,14 @@ body
     .jetlic
         top: 550px
         left: 75%
-        font-size: 96px
+        font-size: 96px        
+        @include monitor
+            left: 80%
+            top: 800px
+
+        @include tab
+            left: 60%
+            top: 950px
         @include sp
             font-size: 84px
             text-align: center
@@ -216,10 +236,16 @@ body
         height: 3800px
 
     .contact
-        height: 1500px
+        height: 1800px
+        @include monitor
+            height: 2200px
+        @include tab
+            height: 1900px
 
     .main_game
         height: 1500px
+        @include monitor
+            height: 2000px
         @include sp
             height: 1000px
 
@@ -232,9 +258,7 @@ body
         opacity: 0.9
         width: 50%
         margin-right: 100px
-        @include pc
-            width: 50%
-            padding-right: 20px        
+      
         @include sp
             width: 80%
             margin-left: 10%
@@ -295,6 +319,8 @@ body
     .terakoya_right
         float: right
         height: 400px
+        @include tab
+            height: 600px
         @include sp
             float: left
             height: 600px
@@ -303,6 +329,8 @@ body
         float: left
         height: 1200px
         margin-left: 120px
+        @include tab
+            height: 1500px
         @include sp
             float: left
             height: 1400px
@@ -311,6 +339,8 @@ body
     .terakoya_right2
         height: 200px
         float: right
+        @include tab
+            height: 250px
         @include sp
             float: left
             height: 250px
@@ -318,6 +348,8 @@ body
     .member_right
         float: right
         height: 200px
+        @include tab
+            height: 250px
         @include sp
             float: left
             height: 300px
@@ -326,6 +358,8 @@ body
         float: left
         height: 350px
         margin-left: 120px
+        @include tab
+            height: 400px
         @include sp
             float: left
             height: 500px
@@ -348,6 +382,8 @@ body
     .contact_right
         float: right
         height: 400px
+        @include tab
+            height: 650px
         @include sp
             float: left
             height: 650px
@@ -423,6 +459,8 @@ body
     &:hover
         background: #0d417d
         color: #fff
+    @include tab
+        margin-left: 50px
     @include sp
         margin-left: 50px
         
