@@ -16,9 +16,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
     <link rel="stylesheet" href="style_sass.css">
-    <title>Document</title>
+    <title>JETLIC Games</title>
+    <script type="text/javascript">
+        $(function () {
+            $(".main").hide();
+            $(".logo_one").fadeOut(2500);
+            $(".footer").hide();
+            setTimeout(function () {
+                $(".top_one").fadeIn(600);
+                $(".main").fadeIn(1000);
+                $(".footer").fadeIn(1000);
+
+            }, 2500);
+        });
+    </script>
 </head>
 <body>
+    <p class="center"><img src="games.png" alt="" class="logo_one animate__shakeX"></p>
     <div class="main">
         <div class="top_about" alt="つくる、まなぶ、みつける　全てができる立方体">
         </div>
