@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   height: cover;
 }
@@ -20,6 +21,10 @@ body {
 .logo_one {
   margin-top: 100px;
   width: 30%;
+}
+
+.nodis {
+  display: none;
 }
 
 .heading {
@@ -55,6 +60,7 @@ body {
   font-size: 80px;
   font-weight: 400;
   font-family: "Kaushan Script", cursive;
+  z-index: -1;
 }
 @media (max-width: 480px) {
   .heading::before {
@@ -81,13 +87,31 @@ body {
 .top .top_text:hover {
   color: #b67a77;
 }
+.top .ham_text {
+  font-size: 28px;
+  margin: 20px;
+  margin: 20px;
+  color: #e3eff6;
+  font-family: "Rajdhani", sans-serif;
+  letter-spacing: 0.05em;
+}
 .top .top_text1 {
   left: 80px;
   font-size: 48px;
 }
+@media (max-width: 480px) {
+  .top .top_text1 {
+    font-size: 32px;
+  }
+}
 .top .top_text2 {
   left: 100px;
   font-size: 40px;
+}
+@media (max-width: 480px) {
+  .top .top_text2 {
+    font-size: 24px;
+  }
 }
 .top .top_text_sub1 {
   margin-top: 50px;
@@ -105,6 +129,11 @@ body {
   left: 80px;
   font-size: 48px;
 }
+@media (max-width: 480px) {
+  .top .top_3 {
+    font-size: 32px;
+  }
+}
 .top .top_text_sub4 {
   margin-top: 370px;
 }
@@ -114,6 +143,11 @@ body {
 .top .top_4 {
   left: 80px;
   font-size: 48px;
+}
+@media (max-width: 480px) {
+  .top .top_4 {
+    font-size: 32px;
+  }
 }
 .top .top_text_sub2-1 {
   margin-top: 180px;
@@ -129,10 +163,24 @@ body {
   left: 80%;
   top: 400px;
 }
+@media (max-width: 480px) {
+  .top .top_img {
+    top: 570px;
+    left: 5%;
+    width: 20%;
+  }
+}
 .top .jetlic {
   top: 550px;
   left: 75%;
   font-size: 96px;
+}
+@media (max-width: 480px) {
+  .top .jetlic {
+    font-size: 84px;
+    text-align: center;
+    left: 25%;
+  }
 }
 
 .main .top_one {
@@ -496,4 +544,111 @@ body {
   display: none;
   margin: 0 3% 3% 3%;
   padding: 3%;
+}
+
+.hamburger {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  right: 13px;
+  top: 12px;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.5s all;
+}
+@media (max-width: 480px) {
+  .hamburger {
+    display: block;
+  }
+}
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  left: 6px;
+  background: #e3eff6;
+}
+
+.hamburger span:nth-child(1) {
+  top: 10px;
+}
+
+.hamburger span:nth-child(2) {
+  top: 20px;
+}
+
+.hamburger span:nth-child(3) {
+  top: 30px;
+}
+
+/* ナビ開いてる時のボタン */
+.hamburger.active {
+  transform: rotate(360deg);
+}
+
+.hamburger.active span:nth-child(1) {
+  top: 16px;
+  left: 6px;
+  background: #e3eff6;
+  transform: rotate(-45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  top: 16px;
+  background: #e3eff6;
+  transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(3) {
+  opacity: 0;
+}
+
+nav.globalMenuSp {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  color: #e3eff6;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+nav.globalMenuSp ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+nav.globalMenuSp ul li {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  transition: 0.4s all;
+}
+
+nav.globalMenuSp ul li:last-child {
+  padding-bottom: 0;
+}
+
+nav.globalMenuSp ul li:hover {
+  background: #e3eff6;
+}
+
+nav.globalMenuSp ul li a {
+  display: block;
+  color: #e3eff6;
+  padding: 1em 0;
+  text-decoration: none;
+}
+
+/* このクラスを、jQueryで付与・削除する */
+nav.globalMenuSp.active {
+  opacity: 100;
 }/*# sourceMappingURL=style_sass.css.map */
