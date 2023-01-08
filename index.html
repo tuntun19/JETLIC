@@ -18,7 +18,7 @@
   <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
   <title>JETLIC</title>
   <script type="text/javascript">
-    $(function () {
+    $(function() {
       var n = 0;
       $('.top_text_sub2-1').hide();
       $('.top_text_sub2-2').hide();
@@ -42,17 +42,42 @@
           }, 450);
         }
       });
+    $('.hamburger').click(function() {
+        $(this).toggleClass('active');
+ 
+        if ($(this).hasClass('active')) {
+            $('.globalMenuSp').addClass('active');
+            $('.globalMenuSp').show();
+        } else {
+            $('.globalMenuSp').removeClass('active');
+            $('.globalMenuSp').hide();
+        }
+    });
+      var window_width1 = $(window).width();
+      if (window_width1 < 481) {
+        $('.ham').addClass("nodis"); 
+      }else{
+        $('.ham').removeClass("nodis"); 
+        $('.hamburger').hide();
+        $('.globalMenuSp').hide();
+      }
     });
   </script>
 </head>
 <body>
   <div class="top">
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <script type="text/javascript" class="back">
+
+      var window_width = $(window).width();
       function preload() {
       }
       function setup() {
         createCanvas(windowWidth, windowHeight, WEBGL);
-        textSize(windowWidth / 3);
       }
       function draw() {
         background(13, 65, 125);
@@ -62,32 +87,51 @@
             stroke(241, 202, 0);
             rotateX(frameCount * 0.001);
             rotateZ(frameCount * 0.001);
-            box(300, 300, 300);
+            if (window_width > 1200) {
+              box(300, 300, 300);
+            }else{
+              box(180, 180, 180);
+            }
+            
           }
         }
       }
     </script>
+
+    
+    <nav class="globalMenuSp">
+        <ul>
+            <li><a href="about.html"><p class="ham_text">About</p></a></li>
+            <li><a href="one.html"><p class="ham_text">　JETLIC ONE</p></a></li>
+            <li><a href="terakoya.html"><p class="ham_text">　JETLIC Terakoya</p></a></li>
+            <li><a href="games.html"><p class="ham_text">　JETLIC Games</p></a></li>
+            <li><a href="member.html"><p class="ham_text">Member</p></a></li>
+            <li><a href="contact.html"><p class="ham_text">Contact</p></a></li>
+        </ul>
+    </nav>
     <img src="logo.png" alt="" class="top_text top_img">
     <p class="top_text jetlic">JETLIC</p>
-    <a href="about.html">
-      <p class="top_text_sub1 top_text top_text1">About</p>
-    </a>
-    <p class="top_text_sub2 top_text top_text1">Project</p>
-    <a href="one.html">
-      <p class="top_text top_text_sub2-1 top_text2">　JETLIC ONE</p>
-    </a>
-    <a href="terakoya.html">
-      <p class="top_text top_text_sub2-2 top_text2">　JETLIC Terakoya</p>
-    </a>
-    <a href="games.html">
-      <p class="top_text top_text_sub2-3 top_text2">　JETLIC Games</p>
-    </a>
-    <a href="member.html">
-      <p class="top_text_sub3-1 top_3 top_text top_text1">Member</p>
-    </a>
-    <a href="contact.html">
-      <p class="top_text_sub4-1 top_4 top_text top_text1">Contact</p>
-    </a>
+    <div class="ham">
+      <a href="about.html">
+        <p class="top_text_sub1 top_text top_text1">About</p>
+      </a>
+      <p class="top_text_sub2 top_text top_text1">Project</p>
+      <a href="one.html">
+        <p class="top_text top_text_sub2-1 top_text2">　JETLIC ONE</p>
+      </a>
+      <a href="terakoya.html">
+        <p class="top_text top_text_sub2-2 top_text2">　JETLIC Terakoya</p>
+      </a>
+      <a href="games.html">
+        <p class="top_text top_text_sub2-3 top_text2">　JETLIC Games</p>
+      </a>
+      <a href="member.html">
+        <p class="top_text_sub3-1 top_3 top_text top_text1">Member</p>
+      </a>
+      <a href="contact.html">
+        <p class="top_text_sub4-1 top_4 top_text top_text1">Contact</p>
+      </a>
+    </div>
   </div>
 </body>
 </html>

@@ -224,7 +224,12 @@ body {
   height: 1500px;
 }
 .main .main_game {
-  height: 1000px;
+  height: 1500px;
+}
+@media (max-width: 480px) {
+  .main .main_game {
+    height: 1000px;
+  }
 }
 .main .one_card {
   margin-top: 100px;
