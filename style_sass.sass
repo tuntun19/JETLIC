@@ -197,6 +197,7 @@ body
             left: 60%
             top: 950px
         @include sp
+            top: 550px
             font-size: 84px
             text-align: center
             left: 25%
@@ -205,12 +206,29 @@ body
 .main
     .top_one
         width: 100%
-        height: 800px
+        height: cover
         background-size: cover
         background-repeat: no-repeat
         background-image: url("one.jpg")
-        @include sp
-            background-image: url("one2.jpg")
+        // @include sp
+        //     background-image: url("one2.jpg")
+
+    .top_terakoya
+        width: 100%
+        height: cover
+        background-size: cover
+        background-repeat: no-repeat
+        background-image: url("terakoya.jpg")
+
+    .top_game
+        width: 100%
+        height: cover
+        background-size: cover
+        background-repeat: no-repeat
+        background-image: url("games.jpg")
+
+    .main_one
+        top: 0
 
     p
         margin-left: 50px
@@ -243,7 +261,7 @@ body
             height: 1900px
 
     .main_game
-        height: 1500px
+        height: 1000px
         @include monitor
             height: 2000px
         @include sp
